@@ -24,9 +24,8 @@ export default function RootLayout({ children }) {
       <head>
         {/* Adicione o Script do AdSense aqui (substitua o ca-pub-XXXXXXXXXXXXXXXX com o seu ID futuro) */}
         <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-          crossOrigin="anonymous"
+           async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8620115090678360"
+          crossorigin="anonymous"
           strategy="afterInteractive"/>
       </head>
       <body>

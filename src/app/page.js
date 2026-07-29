@@ -12,7 +12,7 @@ export default function Home() {
         <h1>Welcome to OctaNet Articles</h1>
         <p>The place for articles and news about network and cybersecurity</p>
       </header>
-      <AdSense client="ca-pub-XXXXXXXXXXXXXXXX" slot="1234567890" />
+      <AdSense client="ca-pub-8620115090678360" slot="1234567890" />
       <section style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         <h2>Last Articles</h2>
 
@@ -46,7 +46,7 @@ export default function Home() {
           </article>
         ))}
       </section>
-      <AdSense client="ca-pub-XXXXXXXXXXXXXXXX" slot="0987654321" />
+      <AdSense client="ca-pub-8620115090678360" slot="0987654321" />
     </main>
   );
 }

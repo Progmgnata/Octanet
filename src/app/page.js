@@ -1,66 +1,52 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { getAllPosts } from '@/lib/markdown';
+import Link from 'next/link';
+import AdSense from '@/components/AdSense';
 
 export default function Home() {
+  const posts = getAllPosts();
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
+      <header className="home-header" style={{ marginBottom: '2rem', textAlign: 'center' }}>
+        <div className=""></div>
+        <h1>Welcome to OctaNet Articles</h1>
+        <p>The place for articles and news about network and cybersecurity</p>
+      </header>
+      <AdSense client="ca-pub-XXXXXXXXXXXXXXXX" slot="1234567890" />
+      <section style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <h2>Last Articles</h2>
+
+        {posts.map((post) => (
+          <article 
+            className="card-artigo"
+
+            key={post.slug} 
+            style={{ 
+              border: '1px solid #e0e0e0', 
+              borderRadius: '8px', 
+              padding: '1.5rem',
+              backgroundColor: '#fafafa'
+            }}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            <small style={{ color: '#666' }}>{post.data}</small>
+            
+            <h3 style={{ margin: '0.5rem 0' , color: '#5d10b5' }}>{post.titulo}</h3>
+            
+            <p style={{ color: '#444', marginBottom: '1rem' }}>{post.resumo}</p>
+            
+            {/* Link direcionando para o artigo completo */}
+            <Link 
+              href={`/artigo/${post.slug}`}
+              style={{ 
+                color: '#10e834', 
+                textDecoration: 'none', 
+                fontWeight: 'bold' 
+              }}
+            > Read more → </Link>
+          </article>
+        ))}
+      </section>
+      <AdSense client="ca-pub-XXXXXXXXXXXXXXXX" slot="0987654321" />
+    </main>
   );
 }

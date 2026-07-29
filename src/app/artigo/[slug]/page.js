@@ -21,7 +21,7 @@ export default async function PaginaDoArtigo({ params }) {
           <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{postData.titulo}</h1>
           <small style={{ color: '#edcb0c' }}>Publicat in: {postData.data}</small>
         </header>
-        <AdSense client="client=ca-pub-8620115090678360" slot="0987654321" />
+        <AdSense client="client=ca-pub-8620115090678360"/>
         {/* Renderiza conteúdo HTML gerado a partir do .md */}
         <div 
           className="conteudo-do-post"
@@ -40,7 +40,7 @@ export default async function PaginaDoArtigo({ params }) {
       >
         ← Return to other articles
       </Link>
-      <AdSense client="ca-pub-8620115090678360" slot="1234567890" />
+      <AdSense client="ca-pub-8620115090678360"/>
     </main>
   );
 }

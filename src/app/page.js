@@ -31,7 +31,7 @@ export default function Home() {
             <Link 
               href={`/artigo/${post.slug}`}
               style={{ 
-                color: 'var(--cor-borda2)', 
+                color: 'var(--cor-link)', 
                 textDecoration: 'none', 
                 fontWeight: 'bold' 
               }}> Read more → </Link>

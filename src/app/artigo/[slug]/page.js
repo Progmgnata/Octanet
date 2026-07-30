@@ -34,10 +34,9 @@ export default async function PaginaDoArtigo({ params }) {
         style={{ 
           display: 'inline-block', 
           marginBottom: '2rem', 
-          color: '#0aee19', 
+          color: 'var(--cor-link)', 
           textDecoration: 'none' 
-        }}
-      >
+        }}>
         ← Return to other articles
       </Link>
       <AdSense client="ca-pub-8620115090678360"/>

@@ -30,8 +30,8 @@ export default function RootLayout({ children }) {
           <div className="header-content">
             <h1 style={{ margin: 0 , color: 'inherit'}}>OctaNet Articles</h1>
             <nav className="header-nav">
-              <Link href="/" style={{ color: 'var(--cor-borda2)' }}> Home</Link>
-              <Link href="/octanet-group" style={{ color: 'var(--cor-borda2)' }}>OctaNet</Link>
+              <Link href="/" style={{ color: 'var(--cor-link)' }}> Home</Link>
+              <Link href="/octanet-group" style={{ color: 'var(--cor-link)' }}>OctaNet</Link>
             </nav>
           </div>
           

@@ -21,11 +21,11 @@ export default function Home() {
             style={{ padding: '1.5rem', border: '1px solid var(--cor-borda)', borderRadius: '8px', backgroundColor: 'var(--foreground)' }}
             key={post.slug} 
           >
-            <small style={{ color: 'var(--cor-texto-principal)' }}>{post.data}</small>
+            <small style={{ color: 'var(--cor-card)' }}>{post.data}</small>
             
             <h3 style={{ margin: '0.5rem 0' , color: 'var(--cor-principal)' }}>{post.titulo}</h3>
             
-            <p style={{ color: 'var(--cor-texto-principal)', marginBottom: '1rem' }}>{post.resumo}</p>
+            <p style={{ color: 'var(--cor-card)', marginBottom: '1rem' }}>{post.resumo}</p>
             
             {/* Link direcionando para o artigo completo */}
             <Link 

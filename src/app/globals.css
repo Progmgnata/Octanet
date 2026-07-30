@@ -5,7 +5,7 @@
   --cor-principal: #5305ab;
   --cor-texto-principal: #edcb0c;
   --cor-borda: #0eee19;
-  --cor-borda2: #0eee19;
+  --cor-link: #0eee19;
   --sombra-card: #0eee19e0;
 }
 
@@ -62,7 +62,7 @@ a {
   backdrop-filter: blur(10px); /* Efeito de vidro fosco */
   -webkit-backdrop-filter: blur(10px); 
   border-radius: 50px;
-  border: 1px solid var(--cor-borda2);
+  border: 1px solid var(--cor-borda);
   padding: 0.8rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -115,12 +115,12 @@ a {
 }
 
 .conteudo-do-post a {
-  color: var(--cor-borda2);
+  color: var(--cor-link);
   text-decoration: underline;
 }
 
 .conteudo-do-post blockquote {
-  border-left: 4px solid var(--cor-borda2);
+  border-left: 4px solid var(--cor-borda);
   margin: 1.5rem 0;
   padding-left: 1rem;
   color: var(--cor-texto-principal);

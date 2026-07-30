@@ -18,8 +18,7 @@ export default function Home() {
 
         {posts.map((post) => (
           <article 
-            className="card-artigo"
-
+            style={{ padding: '1.5rem', border: '1px solid var(--cor-borda)', borderRadius: '8px', backgroundColor: 'var(--foreground)' }}
             key={post.slug} 
           >
             <small style={{ color: '#666' }}>{post.data}</small>

@@ -19,7 +19,7 @@ export default async function PaginaDoArtigo({ params }) {
       <article>
         <header style={{ marginBottom: '2rem', borderBottom: '1px solid #eee', paddingBottom: '1rem' }}>
           <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{postData.titulo}</h1>
-          <small style={{ color: '#edcb0c' }}>Publicat in: {postData.data}</small>
+          <small style={{ color: '#edcb0c' }}>Publicated in: {postData.data}</small>
         </header>
         <AdSense client="client=ca-pub-8620115090678360"/>
         {/* Renderiza conteúdo HTML gerado a partir do .md */}

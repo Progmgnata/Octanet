@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
-        {/* Adicione o Script do AdSense aqui (substitua o ca-pub-XXXXXXXXXXXXXXXX com o seu ID futuro) */}
         <Script
            async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8620115090678360"
           crossorigin="anonymous"
@@ -31,7 +30,6 @@ export default function RootLayout({ children }) {
       <body>
         <header className="layout-header" >
           <div className="header-content">
-            
             <h1 style={{ margin: 0 , color: 'inherit'}}>OctaNet Articles</h1>
             <nav className="header-nav">
               <Link href="/" style={{ color: '#6cf635'}}> Home</Link>

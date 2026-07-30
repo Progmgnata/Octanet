@@ -1,7 +1,7 @@
 :root {
   --background: #e3c0fc;
   --foreground: #11021b;
-  --cor-card: #e3c0fc;
+  --cor-card: #11021b;
   --cor-principal: #5305ab;
   --cor-texto-principal: #edcb0c;
   --cor-borda: #edcb0c;
@@ -125,6 +125,14 @@ a {
   padding-left: 1rem;
   color: #555;
   font-style: italic;
+}
+@media (max-width: 600px) {
+  .card-artigo {
+    padding: 1.2rem;
+  }
+  .header-content{
+    padding: 0.5rem 1rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

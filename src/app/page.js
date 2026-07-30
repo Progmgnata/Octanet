@@ -21,12 +21,6 @@ export default function Home() {
             className="card-artigo"
 
             key={post.slug} 
-            style={{ 
-              border: '1px solid #e0e0e0', 
-              borderRadius: '8px', 
-              padding: '1.5rem',
-              backgroundColor: '#fafafa'
-            }}
           >
             <small style={{ color: '#666' }}>{post.data}</small>
             
@@ -41,8 +35,7 @@ export default function Home() {
                 color: '#10e834', 
                 textDecoration: 'none', 
                 fontWeight: 'bold' 
-              }}
-            > Read more → </Link>
+              }}> Read more → </Link>
           </article>
         ))}
       </section>

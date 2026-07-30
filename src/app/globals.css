@@ -3,7 +3,7 @@
   --foreground: #11021b;
   --cor-card: #11021b;
   --cor-principal: #5305ab;
-  --cor-texto-principal: #edcb0c;
+  --cor-texto-principal: #11021b;
   --cor-borda: #edcb0c;
   --cor-borda2: #0eee19;
   --sombra-card: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -139,6 +139,10 @@ a {
   :root{
     --background: #11021b;
     --foreground: #ededed;
+    --cor-card: #1a0f2b;
+    --cor-principal: #5305ab;
+    --cor-texto-principal: #edcb0c;
+    --cor-borda: #edcb0c;
     --sombra-card: #0eee19e0;
   }
   html, body {

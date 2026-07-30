@@ -16,7 +16,7 @@ export default async function PaginaDoArtigo({ params }) {
 
   return (
     <main style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
-      <article>
+      <article className="card-artigo">
         <header style={{ marginBottom: '2rem', borderBottom: '1px solid #eee', paddingBottom: '1rem' }}>
           <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{postData.titulo}</h1>
           <small style={{ color: '#edcb0c' }}>Publicated in: {postData.data}</small>

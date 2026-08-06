@@ -1,7 +1,7 @@
 ---
 titulo: "Computing"
 data: "2026-08-05"
-resumo: "We often hear terms like **cloud computing**, **computer science**, and **computer engineering**, yet we rarely stop to think about the word they all have in common"
+resumo: " We rarely stop to think about the word is..."
 ---
 
 # The Root of the Fruits

@@ -83,7 +83,6 @@ a {
 
 .card-artigo {
   background-color: var(--cor-card);
-  border: 1px solid var(--cor-borda);
   padding: 1.8rem;
   margin-bottom: 1.5rem;
   box-shadow: var(--sombra-card);
